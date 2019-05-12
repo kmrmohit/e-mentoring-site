@@ -1,0 +1,17 @@
+<!<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Answer</title>
+  </head>
+  <body>
+    <form method="post">
+    <label for="body">Question</label>
+    <textarea name="qbody" id="qbody">{{ request.form['body'] or posts['body'] }}</textarea>
+    <label for="body">Your answer here</label>
+    <textarea name="body" id="body"></textarea>
+    <input type="submit" value="Save">
+    </form>
+    <hr>
+  </body>
+</html>
